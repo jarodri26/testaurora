@@ -8,13 +8,15 @@ from typing import List
 import streamlit as st
 from agents import CsvAgent
 
+# Configuração da página 
+st.set_page_config(page_title="Agente NF Analytics", page_icon="🌀")
+
 # imagem no cabeçalho
-image_url = "https://github.com/jarodri26/testaurora/blob/main/imagem/orbis.png"
-st.image(image_url, use_column_width=True)
+image_url = "https://raw.githubusercontent.com/jarodri26/testaurora/main/imagem/orbis.png"
+st.image(image_url, use_container_width=True)
 
 # Nome do aplicativo
-st.set_page_config(page_title="Agente NF Analytics", page_icon="🌀")
-st.title("📊 Agente NF Analytics ")
+st.title("🌀📊 Agente NF Analytics ")
 
 # Seleção do modelo
 model_provider = st.selectbox(
